@@ -9,8 +9,8 @@ import { increment } from "./features/counter/counterSlice";
 
 function App() {
   const [count, setCount] = useState([]);
-  const cnt = useSelector((state) => state.counter.value);
-  const dispatch = useDispatch();
+  // const cnt = useSelector((state) => state.counter.value);
+  // const dispatch = useDispatch();
   const onAddItem = (value) => {
     const arr = [];
     for (let i = 1; i <= value; i++) {
@@ -39,8 +39,8 @@ function App() {
               </div>
             ))}
           </div>
-          <button onClick={() => dispatch(increment())}>button</button>
-          <span>{cnt}</span>
+          {/* <button onClick={() => dispatch(increment())}>button</button>
+          <span>{cnt}</span> */}
         </div>
       </div>
       <Sidebar onAddItem={onAddItem} />

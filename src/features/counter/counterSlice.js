@@ -3,21 +3,22 @@ import { createSlice } from "@reduxjs/toolkit";
 export const counterSlice = createSlice({
   name: "counter",
   initialState: {
-    value: 0,
+    value: [],
   },
   reducers: {
-    increment: (state) => {
-      state.value += 1;
+    onAddItem: (state, action) => {
+      const arr = [];
+      for (let i = 1; i <= action.payload; i++) {
+        arr.push(i);
+      }
+      state.value = arr;
     },
-    decrement: (state) => {
-      state.value -= 1;
-    },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload;
+    onClearItem: (state) => {
+      state.value = [];
     },
   },
 });
 
-export const { increment, decrement, incrementByAmount } = counterSlice.actions;
+export const { onAddItem, onClearItem } = counterSlice.actions;
 
 export default counterSlice.reducer;

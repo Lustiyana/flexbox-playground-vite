@@ -1,9 +1,6 @@
-import { useEffect } from "react";
-import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import "./App.css";
 import FlexItems from "./components/FlexItems/FlexItems";
-import Footer from "./components/Footer/Footer";
 import GenerateCode from "./components/GenerateCode/GenerateCode";
 import Navbar from "./components/Navbar/Navbar";
 import Sidebar from "./components/Sidebar/Sidebar";
@@ -18,11 +15,8 @@ function App() {
         {/* Navbar */}
         <Navbar />
         {/* Page content here */}
-        <div
-          className={`flex flex-col justify-between h-full overflow-x-scroll overflow-y-hidden`}
-        >
-          <FlexItems />
-        </div>
+
+        <FlexItems />
         {openCode ? <GenerateCode /> : null}
       </div>
       <Sidebar />

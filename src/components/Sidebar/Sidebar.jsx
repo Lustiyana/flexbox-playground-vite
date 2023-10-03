@@ -6,6 +6,7 @@ import { handleOpenCode } from "../../features/code/codeSlice";
 import Button from "../Button/Button";
 import FormItemBox from "../FormItemBox/FormItemBox";
 import Select from "../Select/Select";
+import "./style.css";
 
 const Sidebar = () => {
   const counter = useSelector((state) => state.counter.value);

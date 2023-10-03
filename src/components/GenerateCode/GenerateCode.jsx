@@ -14,7 +14,7 @@ const GenerateCode = () => {
   );
 
   const containerStyles = `
-.container{ \n
+.container{
   ${Object.entries(filteredStyles)
     .map(([key, value]) => `${FLEX[key].cssStyle}: ${value};`)
     .join("\n  ")}
@@ -32,7 +32,9 @@ const GenerateCode = () => {
   };
 
   return (
-    <div className={`bg-neutral h-1/2 text-white flex fixed bottom-0 right-0`}>
+    <div
+      className={`bg-neutral h-1/2 text-white flex fixed bottom-0 right-0 ml-[320px] p-6 gap-8`}
+    >
       <div className="flex-1">
         <div className="flex justify-between">
           <div>style.css</div>

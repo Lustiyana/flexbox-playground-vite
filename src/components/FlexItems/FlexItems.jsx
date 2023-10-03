@@ -7,7 +7,7 @@ const FlexItems = () => {
   const selectChange = useSelector((state) => state.select);
   console.log(selectChange);
   return (
-    <div className="p-5">
+    <div className="flex flex-col justify-between h-full mt-16 lg:ml-[320px] overflow-y-hidden p-6">
       <div
         className={`flex gap-4 ${
           FLEX["alignContent"].class[selectChange.alignContent]

@@ -22,7 +22,7 @@ const FormItemBox = () => {
     dispatch(onClearContainer());
   };
   return (
-    <form className="flex flex-col gap-4" method="POST">
+    <form className="flex flex-col gap-2" method="POST">
       <div className="form-control w-full max-w-xs">
         <label className="label">
           <span className="label-text">Box</span>

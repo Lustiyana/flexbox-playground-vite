@@ -25,7 +25,7 @@ const Navbar = () => {
           </svg>
         </label>
       </div>
-      <div className="flex-1 px-2 mx-2">FLEXBOX PLAYGROUND</div>
+      <div className="flex-1 px-2 mx-2 fixed">FLEXBOX PLAYGROUND</div>
     </div>
   );
 };

@@ -10,11 +10,11 @@ const FlexItems = () => {
     <div className="p-5">
       <div
         className={`flex gap-4 ${
-          FLEX["alignContent"][selectChange.alignContent]
-        } ${FLEX["alignItems"][selectChange.alignItems]} ${
-          FLEX["flexDirection"][selectChange.flexDirection]
-        } ${FLEX["flexWrap"][selectChange.flexWrap]} ${
-          FLEX["justifyContent"][selectChange.justifyContent]
+          FLEX["alignContent"].class[selectChange.alignContent]
+        } ${FLEX["alignItems"].class[selectChange.alignItems]} ${
+          FLEX["flexDirection"].class[selectChange.flexDirection]
+        } ${FLEX["flexWrap"].class[selectChange.flexWrap]} ${
+          FLEX["justifyContent"].class[selectChange.justifyContent]
         }`}
       >
         {count.map((i, index) => (

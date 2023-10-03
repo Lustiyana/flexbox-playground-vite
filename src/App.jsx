@@ -12,16 +12,18 @@ function App() {
   const openCode = useSelector((state) => state.code.openCode);
 
   return (
-    <div className="drawer lg:drawer-open">
+    <div className="drawer lg:drawer-open overflow-y-hidden">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
         <Navbar />
         {/* Page content here */}
-        <div className="flex flex-col justify-between h-screen">
+        <div
+          className={`flex flex-col justify-between h-full overflow-x-scroll overflow-y-hidden`}
+        >
           <FlexItems />
-          {openCode ? <GenerateCode /> : null}
         </div>
+        {openCode ? <GenerateCode /> : null}
       </div>
       <Sidebar />
     </div>

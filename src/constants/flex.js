@@ -1,40 +1,55 @@
 export const FLEX = {
   flexDirection: {
-    row: "flex-row",
-    column: "flex-col",
-    "row-reverse": "flex-row-reverse",
-    "column-reverse": "flex-col-reverse",
+    class: {
+      row: "flex-row",
+      column: "flex-col",
+      "row-reverse": "flex-row-reverse",
+      "column-reverse": "flex-col-reverse",
+    },
+    cssStyle: "flex-direction",
   },
 
   flexWrap: {
-    "no-wrap": "flex-nowrap",
-    wrap: "flex-wrap",
-    "wrap-reverse": "flex-wrap-reverse",
+    class: {
+      "no-wrap": "flex-nowrap",
+      wrap: "flex-wrap",
+      "wrap-reverse": "flex-wrap-reverse",
+    },
+    cssStyle: "flex-wrap",
   },
 
   justifyContent: {
-    "flex-start": "justify-start",
-    "flex-end": "justify-end",
-    center: "justify-center",
-    "space-between": "justify-between",
-    "space-around": "justify-around",
-    "space-evenly": "justify-evenly",
+    class: {
+      "flex-start": "justify-start",
+      "flex-end": "justify-end",
+      center: "justify-center",
+      "space-between": "justify-between",
+      "space-around": "justify-around",
+      "space-evenly": "justify-evenly",
+    },
+    cssStyle: "justify-content",
   },
 
   alignItems: {
-    "flex-start": "items-start",
-    "flex-end": "items-end",
-    center: "items-center",
-    stratch: "items-stratch",
-    baseline: "items-baseline",
+    class: {
+      "flex-start": "items-start",
+      "flex-end": "items-end",
+      center: "items-center",
+      stratch: "items-stratch",
+      baseline: "items-baseline",
+    },
+    cssStyle: "align-items",
   },
 
   alignContent: {
-    "flex-start": "content-start",
-    "flex-end": "content-end",
-    center: "content-center",
-    stretch: "content-stretch",
-    "space-between": "content-between",
-    "space-around": "content-around",
+    class: {
+      "flex-start": "content-start",
+      "flex-end": "content-end",
+      center: "content-center",
+      stretch: "content-stretch",
+      "space-between": "content-between",
+      "space-around": "content-around",
+    },
+    cssStyle: "align-content",
   },
 };

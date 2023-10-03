@@ -20,7 +20,7 @@ const Sidebar = () => {
       ></label>
       <div className="menu p-4 w-80 min-h-full bg-base-200">
         {/* Sidebar content here */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-2">
           <FormItemBox />
           <Select />
           {counter.length > 0 ? (

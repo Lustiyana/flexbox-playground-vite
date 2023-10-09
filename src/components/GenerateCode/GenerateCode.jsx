@@ -27,18 +27,20 @@ const GenerateCode = () => {
     .map(([key, value]) => `${FLEX[key].cssStyle}: ${value};`)
     .join("\n  ")}
 }
-  ${boxes
-    .map(
-      (item) => `.container .item-${item.index} { ${Object.keys(item.styles)
-        .filter((i) => item.styles[i])
-        .map((i) => `${FLEX[i]?.cssStyle}:${item.styles[i]};`)
-        .join("\n  ")}
+${boxes
+  .map(
+    (item) => `.container .item-${item.index} {\n  ${Object.keys(item.styles)
+      .filter((i) => item.styles[i])
+      .map((i) => `${FLEX[i]?.cssStyle}:${item.styles[i]};`)
+      .join("\n  ")}
 }`
-    )
-    .join("\n")}`;
+  )
+  .join("\n")}`;
 
-  const containerHTML = `<div className="flex-container">
-  ${count.map((item, index) => `\t<div>${item}</div>`).join("\n")}
+  const containerHTML = `<div class="flex-container">
+  ${count
+    .map((item, index) => `\t<div class=item-${item}>${item}</div>`)
+    .join("\n")}
 </div>`;
 
   const handleClickCopy = (code, type) => {
@@ -61,7 +63,7 @@ const GenerateCode = () => {
         </pre>
       </BoxCode>
       <BoxCode
-        filename="style.css"
+        filename="index.html"
         onCopy={() => handleClickCopy(containerHTML, "copyHTML")}
         isCopy={copyHTML}
       >

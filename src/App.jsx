@@ -15,7 +15,6 @@ function App() {
         {/* Navbar */}
         <Navbar />
         {/* Page content here */}
-
         <FlexItems />
         {openCode ? <GenerateCode /> : null}
       </div>

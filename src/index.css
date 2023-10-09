@@ -12,3 +12,7 @@
   -ms-overflow-style: none; /* IE dan Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.hljs {
+  background-color: transparent;
+}

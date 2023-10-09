@@ -1,12 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
 import codeReducer from "../features/code/codeSlice";
 import counterReducer from "../features/counter/counterSlice";
-import selectReducer from "../features/select/selectSlice";
+import styleContainerReducer from "../features/styleContainer/styleContainerSlice";
+import styleItemReducer from "../features/styleItem/styleItemSlice";
 
 export default configureStore({
   reducer: {
     counter: counterReducer,
-    select: selectReducer,
+    stylecontainer: styleContainerReducer,
     code: codeReducer,
+    styleitem: styleItemReducer,
   },
 });

@@ -52,4 +52,34 @@ export const FLEX = {
     },
     cssStyle: "align-content",
   },
+  alignSelf: {
+    class: {
+      auto: "self-auto",
+      "flex-start": "self-start",
+      "flex-end": "self-end",
+      center: "self-center",
+      stretch: "self-stretch",
+    },
+    cssStyle: "align-self",
+  },
+  shrink: {
+    class: {
+      0: "shrink-0",
+      1: "shrink",
+    },
+    cssStyle: "flex-shrink",
+  },
+  grow: {
+    class: {
+      0: "grow-0",
+      1: "grow",
+    },
+    cssStyle: "flex-grow",
+  },
+  order: {
+    cssStyle: "flex-order",
+  },
+  basis: {
+    cssStyle: "flex-basis",
+  },
 };

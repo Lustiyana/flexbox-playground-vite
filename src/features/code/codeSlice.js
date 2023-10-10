@@ -19,6 +19,7 @@ export const codeSlice = createSlice({
     handleClearCopy: (state, action) => {
       state.copyCSS = false;
       state.copyHTML = false;
+      state.openCode = false;
     },
   },
 });
